@@ -1,0 +1,23 @@
+<p>slideshow works!</p>
+<button type="button" (click)="changeImage1()">Image 1</button>
+<button type="button" (click)="changeImage2()">Image 2</button>
+<div *ngIf="imageindex==1;then view1;else view2"></div>
+<ng-template #view1>
+<img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="Nature" style="width:100%">
+</ng-template>
+<ng-template #view2>
+<img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%">
+</ng-template>
+<br>
+<div [ngSwitch]="imageindex">
+<p *ngSwitchCase="1">
+<img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="Nature" style="width:100%">
+</p>
+<p *ngSwitchCase="2">
+<img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="Snow" style="width:100%">
+</p>
+</div>
+<ul>
+<li *ngFor="let fruit of fruits;let i=index">
+{{i+1}}.{{fruit}}
+</ul>

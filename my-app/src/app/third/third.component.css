@@ -1,0 +1,17 @@
+.Mystyle1{
+    color: red;
+    font-size: 20px;
+}
+.Mystyle2{
+    color: blue;
+    font-style: italic;
+    font-size: 20px; 
+}
+.Mystyle3{
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+.Mystyle4{
+background-color: yellow;
+}

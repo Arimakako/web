@@ -1,0 +1,33 @@
+<p>ex92 works!</p>
+<table border="1">
+    <tr *ngFor="let c of getcustomer()">
+        <td rowspan="5"> {{c.Image}} </td>
+    </tr>
+    <tr *ngFor="let c of getcustomer()">
+        
+        <td>ID:</td>
+        <td>
+            {{c.Id}}
+        </td>
+    </tr>
+    <tr *ngFor="let c of getcustomer()">
+        
+        <td>Name:</td>
+        <td>
+            {{c.Name}}
+        </td>
+    </tr>
+    <tr *ngFor="let c of getcustomer()">
+       
+        <td>Email:</td>
+        <td>
+            {{c.Email}}
+        </td>
+    </tr>
+    <tr *ngFor="let c of getcustomer()">
+  
+        <td>Age:</td>
+        <td>
+            {{c.Age}}
+        </td>
+</table>

@@ -1,0 +1,33 @@
+
+table{
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    border-collapse: collapse;
+    border:1px solid #000;
+}
+table th{
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    border:1px solid #000;
+}
+table td{
+    padding: 5px 10px;
+    text-align: center;
+    border:1px solid #000;
+}
+.create{
+    margin: 10px 0;
+    text-align: right;
+
+}
+button{
+    padding: 5px 10px;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black
+}

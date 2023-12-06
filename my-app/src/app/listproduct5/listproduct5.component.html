@@ -1,0 +1,13 @@
+<p>listproduct5 works!</p>
+<table>
+    <tr>
+      <th>Product ID</th>
+      <th>Product Name</th>
+      <th>Product Price</th>
+    </tr>
+    <tr *ngFor="let p of filterProducts">
+      <td>{{ p.ProductID }}</td>
+      <td>{{ p.ProductName }}</td>
+      <td>{{ p.UnitPrice }}</td>
+    </tr>
+  </table>

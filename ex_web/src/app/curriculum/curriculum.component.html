@@ -1,0 +1,36 @@
+<p>curriculum works!</p>
+{{errMessage}}
+<h3>Quản lí giáo trình</h3>
+<button class="create"><a routerLink="/curriculum-new">Create New</a></button>
+<table>
+    <tr>
+        <th>Tensach</th>
+        <th>Giaban</th>
+        <th>Mota</th>
+        <th>Anhbia</th>
+        <th>Ngaycapnhat</th>
+        <th>Soluongton</th>
+        <th>MaCD</th>
+        <th>MaNXB</th>
+        <th></th>
+    </tr>
+    <tbody>
+        <tr *ngFor="let curriculum of curriculums">
+            <td>{{curriculum.Tensach}}</td>
+            <td>{{curriculum.Giaban}}</td>
+            <td>{{curriculum.Mota}}</td>
+            <td><img src="assets/curriculum_images/{{curriculum.Anhbia}}" width="100px"height="150px">
+            </td>
+            <td>{{curriculum.Ngaycapnhat}}</td>
+            <td>{{curriculum.Soluongton}}</td>
+            <td>{{curriculum.MaCD}}</td>
+            <td>{{curriculum.MaNXB}}</td>
+            <td>
+                <button><a routerLink="/curriculum-update/{{curriculum.Id}}">Edit</a></button>
+                <button><a routerLink="/curriculum-detail/{{curriculum.Id}}">Details</a></button>
+                <button (click)="deleteCurriculum(curriculum.Id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>    
+<router-outlet></router-outlet>

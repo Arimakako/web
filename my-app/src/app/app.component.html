@@ -1,0 +1,51 @@
+<!--app-third></app-third-->
+<!--app-fourth></app-fourth-->
+<!--app-ptrb1></app-ptrb1-->
+<!--app-mycomponent></app-mycomponent>
+<app-binding></app-binding>
+<app-bindingclass></app-bindingclass>
+<app-bindingstyle></app-bindingstyle>
+<app-bindingevent></app-bindingevent>
+<app-binding-two-way></app-binding-two-way>
+<app-slideshow></app-slideshow
+<app-ptrb2></app-ptrb2>
+<app-lunar-conversion></app-lunar-conversion-->
+<!--app-contact [AppcomponentData]="WelcomeMessage" [myValue]="myValue" (ChildEvent)="DataFromOtherComponent=$event"></app-contact>
+    <h3 *ngIf="DataFromOtherComponent">
+      {{ DataFromOtherComponent | json }}
+    </h3-->
+<!--
+<app-listproduct></app-listproduct>
+<app-listproduct2></app-listproduct2>
+-->
+<!--
+<app-listproduct3></app-listproduct3>
+<app-listproduct4></app-listproduct4>
+<app-listproduct5></app-listproduct5>
+-->
+<!--
+<p>
+  <a routerLink="/ptrb1">Phuong trinh bac 1</a>
+  <a routerLink="/ptrb2">Phuong trinh bac 2</a>
+  <a routerLink="/about">about</a>
+</p>
+-->
+<table border="1" width="100%">
+  <tr>
+    <td colspan="3">
+      <app-topmenu></app-topmenu>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 500;">
+      <app-leftmenu></app-leftmenu>
+    </td>
+    <td style="width: 500"> <router-outlet></router-outlet></td>
+    <td style="width: 200;"> Right menu o day</td>
+  </tr>
+  <tr>
+    <td colspan="3"> Footer</td>
+  </tr>
+
+</table>
+

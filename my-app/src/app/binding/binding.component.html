@@ -1,0 +1,14 @@
+<p>binding works!</p>
+<p>binding-property-component works!</p>
+<div>
+    <label for="{{ nameid }}">Name:</label>
+    <input [id]="nameid" [value]="name" [disabled]="isDisabled" />
+  
+    <label for="{{ emailid }}">Email:</label>
+    <input [id]="emailid" [value]="email" [disabled]="isDisabled" />
+  </div>
+  
+  <div>
+    <p>Name: {{ name }}</p>
+    <p>Email: {{ email }}</p>
+  </div>
