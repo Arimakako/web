@@ -24,6 +24,9 @@ import { CurriculumDetailComponent } from './curriculum-detail/curriculum-detail
 import { CurriculumUpdateComponent } from './curriculum-update/curriculum-update.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import { CurriculumNewComponent } from './curriculum-new/curriculum-new.component';
+import { FashionComponent } from './fashion/fashion.component';
+import { FashionDetailComponent } from './fashion-detail/fashion-detail.component';
+import { FashionNewComponent } from './fashion-new/fashion-new.component';
 const routes: Routes = [
   {path: 'ex89', component: Ex89Component},
   {path: 'ex90', component: Ex90Component},
@@ -49,6 +52,9 @@ const routes: Routes = [
 {path: 'curriculum-detail/:id', component: CurriculumDetailComponent},
 {path: 'curriculum-update/:id', component: CurriculumUpdateComponent},
 {path: 'curriculum-new', component: CurriculumNewComponent},
+{path: 'fashion', component: FashionComponent},
+{path:'fashion-detail',component:FashionDetailComponent},
+{path:'fashion-new',component:FashionNewComponent},
 ];
 
 @NgModule({

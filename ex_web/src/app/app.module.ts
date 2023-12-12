@@ -30,6 +30,9 @@ import { CurriculumDetailComponent } from './curriculum-detail/curriculum-detail
 import { CurriculumNewComponent } from './curriculum-new/curriculum-new.component';
 import { CurriculumUpdateComponent } from './curriculum-update/curriculum-update.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
+import { FashionComponent } from './fashion/fashion.component';
+import { FashionDetailComponent } from './fashion-detail/fashion-detail.component';
+import { FashionNewComponent } from './fashion-new/fashion-new.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +60,10 @@ import { CurriculumComponent } from './curriculum/curriculum.component';
     CurriculumDetailComponent,
     CurriculumNewComponent,
     CurriculumUpdateComponent,
-    CurriculumComponent
+    CurriculumComponent,
+    FashionComponent,
+    FashionDetailComponent,
+    FashionNewComponent
   ],
   imports: [
     BrowserModule,

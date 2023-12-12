@@ -1,0 +1,36 @@
+{{ errMessage }}
+
+<h3 class="text-center text-white bg-primary p-3">Fashion Style</h3>
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <select class="form-select" [(ngModel)]="style">
+                <option value="All Style">ALL STYLE</option>
+                <option *ngFor="let fashionStyle of styles">{{ fashionStyle }}</option>
+            </select>
+        </div>
+        <div class="col-4">
+            <button class="btn btn-primary w-100" (click)="fashionsByStyle(style)">Search</button>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <div class="row">
+            <h4 class="text-center text-dark bg-warning p-3">{{ styleselected }}</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 mb-2 mt-3" *ngFor="let fashion of selectedStyleFashions">
+                        <div class="card" (click)="detailFashion(fashion._id)">
+                            <img [src]="fashion.fashion_image" class="card-img-top"
+                                style="object-fit: cover; height: 500px;">
+                            <div class="card-body">
+                                <strong class="card-title h6">{{ fashion.fashion_subject }}</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
